@@ -5,54 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechBlogger - Accueil</title>
+    <meta name="description" content="TechBlogger est votre ressource incontournable pour les dernières tendances et actualités dans le domaine de la technologie.">
+    <meta name="keywords" content="technologie, blog, IA, informatique, tendances">
+    <meta property="og:title" content="TechBlogger - Accueil">
+    <meta property="og:description" content="Explorez les dernières tendances technologiques avec nous.">
+    <meta property="og:image" content="url_vers_votre_image">
+    <meta property="og:url" content="url_vers_votre_page">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Accueil</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">À propos</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-info-circle"></i> À propos</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <div class="header__search">
                 <input type="text" class="header__search-input" placeholder="Rechercher...">
-                <button class="header__search-button">Rechercher</button>
+                <button class="header__search-button" aria-label="Rechercher des articles"><i class="fas fa-search"></i></button>
             </div>
         </nav>
-        <div class="header__hero">
+        <div class="header__hero" style="background-image: url('src/images/hero-image.webp');">
             <h1 class="header__title">Bienvenue sur TechBlogger</h1>
             <p class="header__subtitle">Explorez les dernières tendances technologiques avec nous</p>
-            <a href="#articles" class="header__cta">Découvrir les articles</a>
+            <a href="#articles" class="header__cta"><i class="fas fa-book-open"></i> Découvrir les articles</a>
         </div>
     </header>
 
     <section class="about">
         <div class="about__container">
-            <h2 class="about__title">À propos de TechBlogger</h2>
+            <h2 class="about__title"><i class="fas fa-lightbulb"></i> À propos de TechBlogger</h2>
             <p class="about__content">TechBlogger est votre ressource incontournable pour les dernières tendances et actualités dans le domaine de la technologie. Notre mission est de fournir un contenu perspicace qui aide les lecteurs à rester informés et à l'avant-garde des innovations. Du développement logiciel à l'intelligence artificielle, en passant par l'informatique quantique, nous couvrons tout.</p>
         </div>
     </section>
 
     <main class="main">
-        <h2 class="main__section-title" id="articles">Derniers articles</h2>
+        <h2 class="main__section-title" id="articles"><i class="fas fa-newspaper"></i> Derniers articles</h2>
         <div class="article-cards">
             <article class="article-card">
+                <img src="src/images/article1.webp" alt="Dernières tendances en tech" class="article-card__image">
                 <h2 class="article-card__title">Les dernières tendances en tech</h2>
                 <p class="article-card__content">Cet article traite des dernières tendances dans le domaine de la technologie...</p>
-                <a href="src/articles/article1.html" class="article-card__read-more">Lire la suite</a>
+                <a href="src/articles/article1.html" class="article-card__read-more"><i class="fas fa-arrow-right"></i> Lire la suite</a>
             </article>
             <article class="article-card">
+                <img src="src/images/article2.webp" alt="Révolution de l'IA" class="article-card__image">
                 <h2 class="article-card__title">La révolution de l'IA</h2>
                 <p class="article-card__content">Comment l'IA transforme les industries et ce qu'il faut attendre dans le futur...</p>
-                <a href="src/articles/article2.html" class="article-card__read-more">Lire la suite</a>
+                <a href="src/articles/article2.html" class="article-card__read-more"><i class="fas fa-arrow-right"></i> Lire la suite</a>
             </article>
             <article class="article-card">
+                <img src="src/images/article3.webp" alt="Informatique quantique" class="article-card__image">
                 <h2 class="article-card__title">L'essor de l'informatique quantique</h2>
                 <p class="article-card__content">L'informatique quantique est sur le point de révolutionner le monde tel que nous le connaissons...</p>
-                <a href="src/articles/article3.html" class="article-card__read-more">Lire la suite</a>
+                <a href="src/articles/article3.html" class="article-card__read-more"><i class="fas fa-arrow-right"></i> Lire la suite</a>
             </article>
         </div>
     </main>
@@ -61,23 +71,26 @@
         <div class="footer__content">
             <div class="footer__columns">
                 <div class="footer__column">
-                    <h3 class="footer__column-title">À propos</h3>
+                    <h3 class="footer__column-title"><i class="fas fa-info-circle"></i> À propos</h3>
                     <p>TechBlogger est dédié à fournir des informations de qualité sur les dernières avancées technologiques.</p>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__column-title">Liens rapides</h3>
+                    <h3 class="footer__column-title"><i class="fas fa-link"></i> Liens rapides</h3>
                     <ul class="footer__links">
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-file-contract"></i> Mentions légales</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Politique de confidentialité</a></li>
+                        <li><a href="#"><i class="fas fa-sitemap"></i> Plan du site</a></li>
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__column-title">Suivez-nous</h3>
+                    <h3 class="footer__column-title"><i class="fas fa-share-alt"></i> Suivez-nous</h3>
                     <div class="footer__social">
-                        <a href="#" class="footer__social-link">Facebook</a>
-                        <a href="#" class="footer__social-link">Twitter</a>
-                        <a href="#" class="footer__social-link">LinkedIn</a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

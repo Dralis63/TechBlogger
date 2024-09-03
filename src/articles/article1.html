@@ -4,50 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les dernières tendances en tech</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Les dernières tendances en tech - TechBlogger</title>
+    <meta name="description" content="Découvrez les dernières tendances dans le domaine de la technologie.">
+    <meta name="keywords" content="technologie, tendances, innovations, gadgets">
+    <meta property="og:title" content="Les dernières tendances en tech - TechBlogger">
+    <meta property="og:description" content="Découvrez les dernières tendances dans le domaine de la technologie.">
+    <meta property="og:image" content="src/images/article1.webp">
+    <meta property="og:url" content="url_de_l_article">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <div id="progress-bar"></div>
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="../../index.html" class="header__nav-link">Accueil</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">À propos</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../../index.html" class="header__nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-info-circle"></i> À propos</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
-        <h1 class="header__title">Les dernières tendances en tech</h1>
+        <div class="header__hero" style="background-image: url('../../src/images/article1.webp');">
+            <h1 class="header__title">Les dernières tendances en tech</h1>
+        </div>
     </header>
 
     <main class="main">
         <article class="article-detail">
             <h2 class="article-detail__title">Les dernières tendances en tech</h2>
-            <p class="article-detail__content">Cet article explore les dernières tendances en matière de technologie. Le monde de la tech évolue rapidement, avec des innovations et des avancées majeures qui se produisent presque chaque jour. De l'intelligence artificielle à la blockchain, le paysage technologique est en perpétuel changement.</p>
+            <p class="article-detail__content">Le monde de la technologie évolue à une vitesse fulgurante. Chaque année, de nouvelles tendances émergent, modifiant notre manière de travailler, de nous divertir et d'interagir. Dans cet article, nous allons explorer certaines des tendances les plus marquantes de l'année.</p>
+            <h3>Intelligence Artificielle (IA)</h3>
+            <p class="article-detail__content">L'IA continue de s'imposer dans divers domaines, de la médecine à l'éducation. Les entreprises investissent massivement dans le développement de systèmes d'IA capables d'automatiser des tâches complexes, d'analyser des volumes de données gigantesques et de proposer des solutions personnalisées.</p>
+            <h3>Internet des Objets (IoT)</h3>
+            <p class="article-detail__content">Les objets connectés deviennent de plus en plus courants dans notre vie quotidienne. De la maison intelligente aux voitures autonomes, l'IoT révolutionne notre façon de vivre. La tendance est à l'intégration de ces dispositifs pour créer des écosystèmes connectés plus efficaces.</p>
+            <h3>Réalité Virtuelle et Augmentée (VR/AR)</h3>
+            <p class="article-detail__content">Les technologies de réalité virtuelle et augmentée gagnent en popularité. Initialement utilisées dans le jeu vidéo, elles trouvent maintenant des applications dans la formation, la médecine, l'architecture, et bien d'autres secteurs.</p>
+            <p class="article-detail__content">Les prochaines années s'annoncent passionnantes avec des innovations qui pourraient transformer notre quotidien de manière encore plus profonde.</p>
         </article>
-    </main>
 
-    <section class="comments">
-        <h2 class="comments__title">Laisser un commentaire</h2>
-        <form class="comments__form">
-            <textarea class="comments__textarea" placeholder="Votre commentaire..."></textarea>
-            <button class="comments__submit" type="submit">Envoyer</button>
-        </form>
-    </section>
+        <section class="comments">
+            <h2 class="comments__title">Laisser un commentaire</h2>
+            <form class="comments__form">
+                <textarea class="comments__textarea" placeholder="Votre commentaire..."></textarea>
+                <button class="comments__submit" type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer__content">
-            <p>&copy; 2024 TechBlogger. Tous droits réservés.</p>
-            <div class="footer__social">
-                <a href="#" class="footer__social-link">Facebook</a>
-                <a href="#" class="footer__social-link">Twitter</a>
-                <a href="#" class="footer__social-link">LinkedIn</a>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-info-circle"></i> À propos</h3>
+                    <p>TechBlogger est dédié à fournir des informations de qualité sur les dernières avancées technologiques.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-link"></i> Liens rapides</h3>
+                    <ul class="footer__links">
+                        <li><a href="../../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-share-alt"></i> Suivez-nous</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
+            <p class="footer__copyright">&copy; 2024 TechBlogger. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../../src/js/main.js"></script>
 </body>
 
 </html>

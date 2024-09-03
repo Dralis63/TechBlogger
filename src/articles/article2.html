@@ -4,50 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La révolution de l'IA</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>La révolution de l'IA - TechBlogger</title>
+    <meta name="description" content="Découvrez comment l'intelligence artificielle transforme les industries.">
+    <meta name="keywords" content="IA, intelligence artificielle, technologie, innovation">
+    <meta property="og:title" content="La révolution de l'IA - TechBlogger">
+    <meta property="og:description" content="Découvrez comment l'intelligence artificielle transforme les industries.">
+    <meta property="og:image" content="src/images/article2.webp">
+    <meta property="og:url" content="url_de_l_article">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <div id="progress-bar"></div>
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="../../index.html" class="header__nav-link">Accueil</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">À propos</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../../index.html" class="header__nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-info-circle"></i> À propos</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
-        <h1 class="header__title">La révolution de l'IA</h1>
+        <div class="header__hero" style="background-image: url('../../src/images/article2.webp');">
+            <h1 class="header__title">La révolution de l'IA</h1>
+        </div>
     </header>
 
     <main class="main">
         <article class="article-detail">
             <h2 class="article-detail__title">La révolution de l'IA</h2>
-            <p class="article-detail__content">L'intelligence artificielle (IA) transforme les industries à une vitesse fulgurante. De l'automatisation des tâches à la prise de décisions basée sur les données, l'IA pave la voie vers un avenir plus efficace. Cet article explore les dernières avancées de l'IA et leurs implications.</p>
+            <p class="article-detail__content">L'intelligence artificielle (IA) est en train de transformer les industries à une vitesse vertigineuse. Que ce soit dans le domaine de la santé, de la finance, ou même de l'éducation, l'IA permet d'automatiser des processus complexes, de prendre des décisions basées sur des données précises, et d'innover à un rythme sans précédent.</p>
+            <h3>L'IA dans la Santé</h3>
+            <p class="article-detail__content">Dans le domaine médical, l'IA est utilisée pour diagnostiquer des maladies plus rapidement et avec plus de précision que les méthodes traditionnelles. Les algorithmes de machine learning sont capables d'analyser des images médicales pour détecter des signes précoces de maladies telles que le cancer. De plus, l'IA est utilisée pour personnaliser les traitements en fonction des caractéristiques génétiques de chaque patient.</p>
+            <h3>L'IA dans la Finance</h3>
+            <p class="article-detail__content">Dans le secteur financier, l'IA permet d'analyser des volumes massifs de données pour identifier des tendances et faire des prédictions sur les marchés boursiers. Les robots-conseillers utilisent l'IA pour offrir des conseils financiers personnalisés à moindre coût.</p>
+            <h3>Les Défis de l'IA</h3>
+            <p class="article-detail__content">Cependant, l'adoption croissante de l'IA soulève des questions éthiques importantes. Les préoccupations concernant la vie privée, la sécurité, et l'impact sur l'emploi sont au cœur des débats. Il est essentiel de mettre en place des régulations et des cadres éthiques pour s'assurer que l'IA est utilisée de manière responsable.</p>
         </article>
-    </main>
 
-    <section class="comments">
-        <h2 class="comments__title">Laisser un commentaire</h2>
-        <form class="comments__form">
-            <textarea class="comments__textarea" placeholder="Votre commentaire..."></textarea>
-            <button class="comments__submit" type="submit">Envoyer</button>
-        </form>
-    </section>
+        <section class="comments">
+            <h2 class="comments__title">Laisser un commentaire</h2>
+            <form class="comments__form">
+                <textarea class="comments__textarea" placeholder="Votre commentaire..."></textarea>
+                <button class="comments__submit" type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer__content">
-            <p>&copy; 2024 TechBlogger. Tous droits réservés.</p>
-            <div class="footer__social">
-                <a href="#" class="footer__social-link">Facebook</a>
-                <a href="#" class="footer__social-link">Twitter</a>
-                <a href="#" class="footer__social-link">LinkedIn</a>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-info-circle"></i> À propos</h3>
+                    <p>TechBlogger est dédié à fournir des informations de qualité sur les dernières avancées technologiques.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-link"></i> Liens rapides</h3>
+                    <ul class="footer__links">
+                        <li><a href="../../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-share-alt"></i> Suivez-nous</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
+            <p class="footer__copyright">&copy; 2024 TechBlogger. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../../src/js/main.js"></script>
 </body>
 
 </html>

@@ -4,50 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'essor de l'informatique quantique</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>L'essor de l'informatique quantique - TechBlogger</title>
+    <meta name="description" content="Découvrez comment l'informatique quantique révolutionne la technologie.">
+    <meta name="keywords" content="informatique quantique, technologie, innovation, futur">
+    <meta property="og:title" content="L'essor de l'informatique quantique - TechBlogger">
+    <meta property="og:description" content="Découvrez comment l'informatique quantique révolutionne la technologie.">
+    <meta property="og:image" content="src/images/article3.webp">
+    <meta property="og:url" content="url_de_l_article">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <div id="progress-bar"></div>
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="../../index.html" class="header__nav-link">Accueil</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">À propos</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../../index.html" class="header__nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-info-circle"></i> À propos</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
-        <h1 class="header__title">L'essor de l'informatique quantique</h1>
+        <div class="header__hero" style="background-image: url('../../src/images/article3.webp');">
+            <h1 class="header__title">L'essor de l'informatique quantique</h1>
+        </div>
     </header>
 
     <main class="main">
         <article class="article-detail">
             <h2 class="article-detail__title">L'essor de l'informatique quantique</h2>
-            <p class="article-detail__content">L'informatique quantique est sur le point de révolutionner le monde tel que nous le connaissons. Cet article explore ce qu'est l'informatique quantique, comment elle fonctionne, et les applications potentielles qui pourraient changer des industries du monde entier.</p>
+            <p class="article-detail__content">L'informatique quantique est sur le point de révolutionner le monde tel que nous le connaissons. Contrairement aux ordinateurs classiques qui utilisent des bits pour traiter les informations, les ordinateurs quantiques utilisent des qubits qui peuvent représenter simultanément un 0 et un 1, grâce au phénomène de superposition.</p>
+            <h3>Applications Potentielles</h3>
+            <p class="article-detail__content">Cette capacité unique pourrait permettre des avancées significatives dans des domaines comme la cryptographie, où l'informatique quantique pourrait rendre obsolètes les systèmes de sécurité actuels. Elle pourrait également transformer la modélisation moléculaire, permettant aux scientifiques de simuler et d'analyser des molécules complexes de manière beaucoup plus efficace.</p>
+            <h3>Défis Actuels</h3>
+            <p class="article-detail__content">Cependant, l'informatique quantique en est encore à ses balbutiements. Les chercheurs doivent surmonter des défis techniques majeurs avant que cette technologie ne devienne couramment utilisée. La détection et la correction des erreurs dans les systèmes quantiques sont parmi les plus grands obstacles à son adoption.</p>
+            <h3>Perspectives d'Avenir</h3>
+            <p class="article-detail__content">Malgré ces défis, les perspectives de l'informatique quantique sont prometteuses. Les investissements dans ce domaine sont en augmentation, et les grandes entreprises technologiques travaillent d'arrache-pied pour rendre l'informatique quantique accessible à une échelle plus large.</p>
         </article>
-    </main>
 
-    <section class="comments">
-        <h2 class="comments__title">Laisser un commentaire</h2>
-        <form class="comments__form">
-            <textarea class="comments__textarea" placeholder="Votre commentaire..."></textarea>
-            <button class="comments__submit" type="submit">Envoyer</button>
-        </form>
-    </section>
+        <section class="comments">
+            <h2 class="comments__title">Laisser un commentaire</h2>
+            <form class="comments__form">
+                <textarea class="comments__textarea" placeholder="Votre commentaire..."></textarea>
+                <button class="comments__submit" type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer__content">
-            <p>&copy; 2024 TechBlogger. Tous droits réservés.</p>
-            <div class="footer__social">
-                <a href="#" class="footer__social-link">Facebook</a>
-                <a href="#" class="footer__social-link">Twitter</a>
-                <a href="#" class="footer__social-link">LinkedIn</a>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-info-circle"></i> À propos</h3>
+                    <p>TechBlogger est dédié à fournir des informations de qualité sur les dernières avancées technologiques.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-link"></i> Liens rapides</h3>
+                    <ul class="footer__links">
+                        <li><a href="../../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title"><i class="fas fa-share-alt"></i> Suivez-nous</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
+            <p class="footer__copyright">&copy; 2024 TechBlogger. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../../src/js/main.js"></script>
 </body>
 
 </html>
