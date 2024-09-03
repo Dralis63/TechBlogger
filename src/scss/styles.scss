@@ -1,0 +1,33 @@
+// Variables
+$primary-color: #3498db;
+$font-stack: Arial, sans-serif;
+
+// Base Styles
+body {
+    font-family: $font-stack;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
