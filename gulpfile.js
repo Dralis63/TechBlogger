@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const imagemin = require('gulp-imagemin');
 
 // Tâche pour compiler le SCSS en CSS avec autoprefixer
 function compileSass() {
@@ -12,8 +13,7 @@ function compileSass() {
 }
 
 // Tâche pour optimiser les images
-async function optimizeImages() {
-    const imagemin = (await import('gulp-imagemin')).default;
+function optimizeImages() {
     return gulp.src('src/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'));
